@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktds_frontend=self.webpackChunktds_frontend||[]).push([[816],{816:(r,e,n)=>{n.d(e,{generateOrgCode:()=>a});var o=n(662),t=(n(217),n(472));const a=async r=>{try{const e=`TDS-${Math.random().toString(36).substring(2,8).toUpperCase()}`;return await(0,t.mZ)((0,t.H9)(o.db,"users",r),{organizationCode:e}),{organizationCode:e,error:null}}catch(e){return console.error("Error generating organization code:",e),{organizationCode:null,error:e.message}}}}}]);
+//# sourceMappingURL=816.ebbad3c0.chunk.js.map

@@ -1,0 +1,78 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+}
+
+/* Container layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+/* Buttons */
+button {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Inputs */
+input, textarea {
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #F68B1F;
+  box-shadow: 0px 0px 6px rgba(246, 139, 31, 0.3);
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Loader Animation */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader div {
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+  background: #F68B1F;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
